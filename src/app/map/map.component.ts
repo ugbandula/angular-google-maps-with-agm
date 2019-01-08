@@ -54,12 +54,39 @@ export class MapComponent implements OnInit {
     zoom: 5
   };
 
+  public markers: Marker[] = [];
+
   @ViewChild(AgmMap) map: AgmMap;
 
   circleRadius: number = 5000;
 
   ngOnInit() {
     this.location.marker.draggable = true;
+
+    this.markers.push(
+      {
+        lat: -37.817760,
+        lng: 145.192001,
+        label: 'A',
+        draggable: false
+      }
+    );
+    this.markers.push(
+      {
+        lat: -37.8826872,
+        lng: 145.1308339,
+        label: 'B',
+        draggable: false
+      }
+    );
+    this.markers.push(
+      {
+        lat: -37.8005201,
+        lng: 145.3043535,
+        label: 'C',
+        draggable: false
+      }
+    );
   }
 
   updateOnMap() {
@@ -164,4 +191,9 @@ export class MapComponent implements OnInit {
       }
     }
   }
+
+  clickedMarker(label: string, index: number) {
+    console.log(`clicked the marker: ${label || index}`)
+  }
+
 }
