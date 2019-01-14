@@ -98,6 +98,7 @@ export class MapComponent implements OnInit {
     this.findLocation(full_address);
   }
 
+  // TODO - This needs to be completed
   findLocation(address) {
     if (!this.geocoder) {
       this.geocoder = new google.maps.Geocoder();
