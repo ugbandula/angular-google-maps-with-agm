@@ -89,6 +89,9 @@ export class MapComponent implements OnInit {
     );
   }
 
+  /**
+   * TODO - Unwanted components needs to be cleared
+   */
   updateOnMap() {
     let full_address: string = this.location.address_level_1 || '';
     if (this.location.address_level_2) full_address = full_address + ' ' + this.location.address_level_2;
