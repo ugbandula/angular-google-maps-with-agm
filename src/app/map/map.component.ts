@@ -30,6 +30,7 @@ interface Location {
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
+
 export class MapComponent implements OnInit {
   constructor(public mapsApiLoader: MapsAPILoader,
               private zone: NgZone,
