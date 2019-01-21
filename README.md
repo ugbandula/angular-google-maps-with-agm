@@ -1,6 +1,7 @@
 # AngularGoogleMapsWithAgm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
+This is a sample implementation of Angular Goole Maps with agm.
+Will enhance the implementation as on going basis.
 
 ## Development server
 
