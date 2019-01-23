@@ -119,7 +119,7 @@ export class MapComponent implements OnInit {
     this.geocoder.geocode({
       'address': address
     }, (results, status) => {
-      console.log(results);
+      // console.log(results);
       if (status == google.maps.GeocoderStatus.OK) {
         for (var i = 0; i < results[0].address_components.length; i++) {
           let types = results[0].address_components[i].types;
@@ -138,6 +138,9 @@ export class MapComponent implements OnInit {
           }
         }
 
+        /**
+         * Assigns the received location details
+         */
         if (results[0].geometry.location) {
           this.location.lat = results[0].geometry.location.lat();
           this.location.lng = results[0].geometry.location.lng();
