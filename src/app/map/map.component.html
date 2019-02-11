@@ -4,12 +4,12 @@
     <agm-marker *ngFor="let marker of markers; let i = index" [latitude]="marker.lat" [longitude]="marker.lng"  (markerClick)="clickedMarker(marker.label, i)"></agm-marker>
   </agm-marker-cluster>
 
-  <agm-circle [latitude]="location.lat" [longitude]="location.lng"
-              [(radius)]="circleRadius"
-              [fillColor]="'blue'"
-              [circleDraggable]="true"
-              [editable]="true">
-  </agm-circle>
+  <!--<agm-circle [latitude]="location.lat" [longitude]="location.lng"-->
+              <!--[(radius)]="circleRadius"-->
+              <!--[fillColor]="'blue'"-->
+              <!--[circleDraggable]="true"-->
+              <!--[editable]="true">-->
+  <!--</agm-circle>-->
 </agm-map>
 
 <br>
